@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <title>Inscription</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="burger" class="flex">
+            <img src="./assets/images/burger.svg" alt="Menu burger">
+        </div>
+        <figure id="logo">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+        </figure>
+        <div id="cloche-pp" class="flex">
+            <div id="cloche">
+                <img src="./assets/images/icones/cloche.png" alt="Cloche notification">
+            </div>
+            <div id="globe">
+                <img src="./assets/images/icones/langue.svg" alt="Globe">
+            </div>
+            <div id="color-mod">
+                <img src="./assets/images/icones/darkmode.svg" alt="Mode de couleur">
+            </div>
+            <div id="profil-picture-header">
+                <img src="./assets/images/chatpp.jpg" alt="Pp">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <form action="" method="POST">
+                <h1>Connexion</h1>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <i class='bx bx-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password1" placeholder="Mot de passe" minlength="8" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" name="envoi" class="btn">Se connecter</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav flex">
+                <a href="#" class="footer-link"><span class="scrollio-brand">Scrollio</span></a>
+                <a href="#" class="footer-link">Politique de confidentialité</a>
+                <a href="#" class="footer-link">Newsletter</a>
+                <a href="#" class="footer-link">Contact</a>
+            </nav>
+            <p class="copyright-text">©2025 tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
