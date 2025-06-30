@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <title>Créer un Post</title>
+</head>
+<body>
+    <header id="header">
+        <div id="burger" class="flex">
+            <img src="./assets/images/burger.svg" alt="Menu burger">
+        </div>
+        <figure id="logo">
+            <a href="index.html">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </a>
+        </figure>
+        <div id="cloche-pp" class="flex">
+            <div id="cloche">
+                <img src="./assets/images/icones/cloche.png" alt="Cloche notification">
+            </div>
+            <div id="globe">
+                <img src="./assets/images/icones/langue.svg" alt="Globe">
+            </div>
+            <!-- <div id="flag">
+                <img src="./assets/images/icones/france.png" alt="Drapeau France">
+            </div> -->
+            <div id="color-mod">
+                <img src="./assets/images/icones/darkmode.svg" alt="Mode de couleur">
+            </div>
+            <div id="profil-picture-header">
+                <img src="./assets/images/chatpp.jpg" alt="Pp">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="create-post-container">
+            <h2>Créer un nouveau Post</h2>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="post-title">Titre du Post</label>
+                    <input type="text" id="post-title" name="post_title" placeholder="Entrez le titre de votre post" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="post-content">Contenu</label>
+                    <textarea id="post-content" name="post_content" placeholder="Exprimez-vous ici..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="post-category">Catégorie</label>
+                    <select id="post-category" name="post_category" required>
+                        <option value="">Sélectionnez une catégorie</option>
+                        <option value="actualite">Actualité</option>
+                        <option value="sport">Sport</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="tech">Technologie</option>
+        
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="post-tags">Tags (séparés par des virgules)</label>
+                    <input type="text" id="post-tags" name="post_tags" placeholder="Ex: actu, fun, intéressant">
+                </div>
+
+                <div class="form-group">
+                    <label for="post-image">Image(s) / Vidéo(s)</label>
+                    <input type="file" id="post-image" name="post_image[]" accept="image/*,video/*" multiple>
+                    <p class="file-info">Sélectionnez un ou plusieurs fichiers (images ou vidéos).</p>
+                </div>
+
+                <div class="form-actions flex">
+                    <button type="button" class="cancel" onclick="window.history.back()">Annuler</button>
+                    <button type="submit" class="submit">Publier le Post</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav flex">
+                <a href="#" class="footer-link"><span class="scrollio-brand">Scrollio</span></a>
+                <a href="#" class="footer-link">Politique de confidentialité</a>
+                <a href="#" class="footer-link">Newsletter</a>
+                <a href="#" class="footer-link">Contact</a>
+            </nav>
+            <p class="copyright-text">©2025 tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
